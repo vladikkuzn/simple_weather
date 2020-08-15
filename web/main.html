@@ -10,15 +10,11 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href = "main.css">
+    
 </head>
+
 <body>
     <input id = "location" type = "text" placeholder="Input city and country name" required = "" value = "New York, USA">
-
-    <button id = "show">Enter</button>
-
-    <div class = "info">
-
-    </div>
 
     <script type = "text/javascript">
         async function display_weather() {
@@ -27,10 +23,15 @@
             let res = await eel.get_weather(place)();
             document.getElementById('info').innerHTML = res;
         }
-        jQuery('#show').on('click', function() {
-            display_weather();
-        });
     </script>
+
+    <button id = "show" onclick = "display_weather()">Enter</button>
+
+    <div id = "info">
+
+    </div>
+
+    
 </body>
 
     
