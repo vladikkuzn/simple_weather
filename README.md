@@ -1,2 +1,2 @@
 # simple_weather
-Application to check weather
+Web application to check weather
