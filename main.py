@@ -1,6 +1,6 @@
 import eel, pyowm
 
-owm = pyowm.OWM("82d316a00d15abac99bcece89526656b")
+owm = pyowm.OWM("")
 
 @eel.expose
 def get_weather(place):
